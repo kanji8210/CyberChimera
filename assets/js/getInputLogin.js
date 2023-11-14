@@ -10,3 +10,4 @@ document.getElementById("login__form").addEventListener("submit", function(event
     console.log("Password: " + password);
  
  });
+
