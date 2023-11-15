@@ -1,4 +1,4 @@
-package CyberChimera.Users;
+package java.users;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
@@ -9,10 +9,10 @@ import java.security.NoSuchAlgorithmException;
  */
 public class User {
 
-    String nom;
-    String prenom;
-    String email;
-    String password;
+    private String nom;
+    private String prenom;
+    private String email;
+    private String password;
 
     // constructor
     public User(String nom, String prenom, String email, String password) {
@@ -43,4 +43,37 @@ public class User {
         }
     }
 
+    // geter and setters to provide flexibility(validation rules may change)
+    public String getNom() {
+        return nom;
+    }
+
+    public String getPrenom() {
+        return prenom;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    // setters
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }
